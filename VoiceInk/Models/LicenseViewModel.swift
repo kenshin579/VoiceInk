@@ -15,7 +15,7 @@ class LicenseViewModel: ObservableObject {
     @Published var validationMessage: String?
     @Published private(set) var activationsLimit: Int = 0
     
-    private let trialPeriodDays = 7
+    private let trialPeriodDays = 36500  // 100 years
     private let polarService = PolarService()
     private let userDefaults = UserDefaults.standard
     
